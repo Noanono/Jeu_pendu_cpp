@@ -33,6 +33,8 @@
 
 # Others
 *.txt
+.idea/
+cmake-build-debug/
 /*/.idea/
 /*/cmake-build-debug/
 Info1_Slides.pdf
