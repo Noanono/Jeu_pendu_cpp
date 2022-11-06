@@ -33,7 +33,9 @@ int main() {
         AfficherDessinPendu(nbEssais);
 
         //Affichage des lettres déjà proposées
-        AfficherLettresProposees(lettresProposees);
+        if(lettresProposees.size() > 0){
+            AfficherLettresProposees(lettresProposees);
+        }
 
         //Demande de la lettre proposée
         lettre = DemandeLettreProposee();
