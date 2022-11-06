@@ -23,7 +23,7 @@ void AfficherDessinPendu(int nbEssais){
 }
 
 void AfficherLettresProposees(vector<string> lettresProposees){
-    cout << "Lettres deja proposées : ";
+    cout << "Lettres deja proposees : ";
     for (int i = 0; i < lettresProposees.size(); i++) {
         cout << lettresProposees[i] << " ";
     }
