@@ -40,6 +40,7 @@ string DemandeLettreProposee(){
 vector<string> ChoixMot(){
     string mot_choisi;
     string mot_cache;
+    srand(time(NULL));
     int nombre_aleatoire = rand() % mots.size();
     mot_choisi = mots[nombre_aleatoire];
     for (int i = 0; i < mot_choisi.size(); i++) {
