@@ -2,6 +2,7 @@
 // Created by soler on 06/11/2022.
 //
 #include "myvars.h"
+#include "fonctions.h"
 
 #include <iostream>
 #include <vector>
@@ -61,3 +62,4 @@ bool VerifierLettre(string lettre, string mot, string &mot_cache){
 bool VerifierMot(string mot, string mot_cache){
     return mot_cache == mot;
 }
+

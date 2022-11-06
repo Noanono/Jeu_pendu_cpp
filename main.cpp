@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include "myvars.h"
+#include "fonctions.h"
 
 using namespace std;
 
@@ -10,11 +10,14 @@ int main() {
     cout << "Jeu du pendu" << endl;
 
     //Mot à trouver
-    string mot = ChoixMot()[0];
+    string mot  = ChoixMot()[0];
     //Mot à trouver caché
     string motCache = ChoixMot()[1];
     //Lettre proposée
     string lettre;
+
+    //Nombre d'essais
+    int nbEssais = 10;
 
     //Boucle de jeu
     while (nbEssais > 0 && !VerifierMot(mot, motCache)) {
