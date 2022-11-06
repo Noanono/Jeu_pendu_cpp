@@ -11,7 +11,7 @@ using namespace std;
 
 
 void AfficherMotCache(string mot_cache){
-    cout << "Mot à trouver : " << mot_cache << endl;
+    cout << "Mot a trouver : " << mot_cache << endl;
 }
 
 void AfficherNombreEssais(int nbEssais){
@@ -23,7 +23,7 @@ void AfficherDessinPendu(int nbEssais){
 }
 
 void AfficherLettresProposees(vector<string> lettresProposees){
-    cout << "Lettres déjà proposées : ";
+    cout << "Lettres deja proposées : ";
     for (int i = 0; i < lettresProposees.size(); i++) {
         cout << lettresProposees[i] << " ";
     }
