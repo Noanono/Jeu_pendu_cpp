@@ -15,6 +15,8 @@ int main() {
     string motCache = ChoixMot()[1];
     //Lettre proposée
     string lettre;
+    //lettres déjà proposées
+    vector<string> lettresProposees;
 
     //Nombre d'essais
     int nbEssais = 10;
@@ -30,6 +32,9 @@ int main() {
         //Affichage du dessin du pendu
         AfficherDessinPendu(nbEssais);
 
+        //Affichage des lettres déjà proposées
+        AfficherLettresProposees(lettresProposees);
+
         //Demande de la lettre proposée
         lettre = DemandeLettreProposee();
 
@@ -38,6 +43,7 @@ int main() {
             cout << "Bravo ! La lettre " << lettre << " est dans le mot !" << endl;
         } else {
             cout << "Dommage ! La lettre " << lettre << " n'est pas dans le mot !" << endl;
+            lettresProposees.push_back(lettre);
             nbEssais--;
         }
     }

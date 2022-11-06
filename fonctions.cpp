@@ -22,6 +22,14 @@ void AfficherDessinPendu(int nbEssais){
     cout << dessin_pendu[10 - nbEssais] << endl;
 }
 
+void AfficherLettresProposees(vector<string> lettresProposees){
+    cout << "Lettres déjà proposées : ";
+    for (int i = 0; i < lettresProposees.size(); i++) {
+        cout << lettresProposees[i] << " ";
+    }
+    cout << endl;
+}
+
 void AfficherFinPartie(bool trouve, string mot){
     if (trouve) {
         cout << "Bravo ! Vous avez trouve le mot !" << mot << endl;

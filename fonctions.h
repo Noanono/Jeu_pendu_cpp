@@ -28,6 +28,12 @@ void AfficherNombreEssais(int nbEssais);
  */
 void AfficherDessinPendu(int nbEssais);
 
+/* R: Fonction qui permet d'afficher les lettres deja proposees
+ * E: Les lettres deja proposees
+ * S: Aucun
+ */
+void AfficherLettresProposees(vector<string> lettresProposees);
+
 /* R: Fonction qui permet d'Afficher le message de fin de partie
  * E: Si le joueur a trouvé le mot ou non et le mot à trouver
  * S: Aucun
